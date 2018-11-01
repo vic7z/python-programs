@@ -1,4 +1,4 @@
-n =int(input("enter limit")) 	#input
+n =int(input("enter a no")) 	#input
 if (n%2==0):
 	print("even no")
 else:
