@@ -13,8 +13,15 @@ data["date"]=pd.to_datetime(data.date)
 #data.set_index('date',inplace=True)
 #print(data.head())
 #print(data[data.type=='tablet'].head())
-print(data['product'][data.type=='tablet'])
-print(data['type'][data.date=='2020-05-24'].describe())
+#print(data['product'][data.type=='tablet'])
+#print(data['type'][data.date=='2020-05-24'].describe())
 #print(data.describe())
-
+dict={ "date":dt.datetime(2011,1,1),
+       "first_name":"vic",
+       "product":"sam",
+       "type":"tablet"
+        }
+print(data.tail())
+data.loc[len(data.index)]=[dt.datetime(2011,1,1),'vic','sam','tablet']
+print(data.tail())
 
